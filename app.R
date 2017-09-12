@@ -27,17 +27,6 @@ ui<-shinyUI(fluidPage(
     ),
     mainPanel(
       
-      helpText(   a("Click Here First",     
-                    href="https://www.youtube.com/watch?v=mCEfqj9pDAI",
-                    target="_blank")
-      ),
-      helpText(   a("For Caroline",     
-                    href="https://www.youtube.com/watch?v=FHG2oizTlpY",
-                    target="_blank")
-      ),
-      
-      br(),
-      
       h2("Survival Statistics on the Titanic", style = "color:purple", align="center"),
       
       plotOutput("mystat"),
