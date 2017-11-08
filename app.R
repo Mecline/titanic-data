@@ -94,7 +94,7 @@ server<-shinyServer(function (input, output) {
                        "21-30" = twentythirty,
                        "31-40" = thirtyforty,
                        "41-50" = fortyfifty,
-                       "51,60" = fiftysixty,
+                       "51-60" = fiftysixty,
                        "61-70" = sixtyseventy,
                        "71+" = seventyeighty)
     
@@ -116,7 +116,7 @@ server<-shinyServer(function (input, output) {
     
     comeout<-nrow(surv)/((nrow(surv)+nrow(dead)))
     
-    print(comeout)
+    print(c("Survival rate of chosen age range:", round(comeout,5)*100, "% survived"))
     
   })
   
